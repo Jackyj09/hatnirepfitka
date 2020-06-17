@@ -58,6 +58,9 @@ Meaning of each fields are discussed below:
 - **INDEX_URL** : (Optional field) Refer to https://github.com/maple3142/GDIndex/ The URL should not have any trailing '/'
 - **TELEGRAM_API** : This is to authenticate to your telegram account for downloading Telegram files. You can get this from https://my.telegram.org DO NOT put this in quotes.
 - **TELEGRAM_HASH** : This is to authenticate to your telegram account for downloading Telegram files. You can get this from https://my.telegram.org
+- **MEGA_API_KEY**: Mega.nz api key to mirror mega.nz links. Get it from [Mega SDK Page](https://mega.nz/sdk)
+- **MEGA_EMAIL_ID**: Your email id you used to sign up on mega.nz for using premium accounts (Leave th)
+- **MEGA_PASSWORD**: Your password for your mega.nz account 
 ```
 python3 generate_string_session.py
 ```
@@ -68,7 +71,7 @@ Note: You can limit maximum concurrent downloads by changing the value of MAX_CO
 - Visit the [Google Cloud Console](https://console.developers.google.com/apis/credentials)
 - Go to the OAuth Consent tab, fill it, and save.
 - Go to the Credentials tab and click Create Credentials -> OAuth Client ID
-- Choose Other and Create.
+- Choose Desktop and Create.
 - Use the download button to download your credentials.
 - Move that file to the root of mirror-bot, and rename it to credentials.json
 - Visit [Google API page](https://console.developers.google.com/apis/library)
@@ -121,9 +124,7 @@ python3 gen_sa_accounts.py --download-keys project_id
 python3 add_to_team_drive.py -d SharedTeamDriveSrcID
 ```
 
-# Youtube-dl authentication using .netrc file
-For using your premium accounts in youtube-dl, edit the netrc file (in the root directory of this repository) according to following format:
-```
-machine host login username password my_youtube_password
-```
-where host is the name of extractor (eg. youtube, twitch). Multiple accounts of different hosts can be added each separated by a new line
+
+### This is a fork of the [original repository](https://GitHub.com/lzzy12/python-aria-mirror-bot)..!
+
+![... because I am BANned from FORKing the original repository "https://t.me/c/1204044293/35549"](https://te.legra.ph/file/20c73f62c5d83d24ae6a8.jpg)
