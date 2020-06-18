@@ -66,7 +66,7 @@ python3 generate_string_session.py
 ```
 Note: You can limit maximum concurrent downloads by changing the value of MAX_CONCURRENT_DOWNLOADS in aria.sh. By default, it's set to 2
  
-## Getting Google OAuth API credential file
+## Getting Google OAuth API credential or CRED_JSON
 
 - Visit the [Google Cloud Console](https://console.developers.google.com/apis/credentials)
 - Go to the OAuth Consent tab, fill it, and save.
@@ -76,9 +76,9 @@ Note: You can limit maximum concurrent downloads by changing the value of MAX_CO
 - Move that file to the root of mirror-bot, and rename it to credentials.json
 - Visit [Google API page](https://console.developers.google.com/apis/library)
 - Search for Drive and enable it if it is disabled
-- Finally, run the script to generate token file (token.pickle) for Google Drive:
+- Finally, run the script to generate CRED_JSON for Google Drive:
 ```
-pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
+pip install oauth2client
 python3 generate_drive_token.py
 ```
 ## Deploying
